@@ -1,7 +1,15 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "strict": true, // Enables strict type-checking
+    "noImplicitAny": false, // Allows variables to have 'any' type
+    "skipLibCheck": true, // Skips type-checking for external libraries
+    "allowJs": true, // Allows JavaScript files in the project
+    "checkJs": false, // Skips type-checking in JavaScript files
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
