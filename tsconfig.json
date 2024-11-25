@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "jsx": "react",
     "strict": true,
-    "noImplicitAny": true,
-    "skipLibCheck": true,
-    "allowJs": true,
-    "jsx": "react", // Add this line
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
+
 
